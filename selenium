@@ -1,0 +1,11 @@
+from selenium import webdriver
+import time
+driver = webdriver.Chrome("C:\Users\id\PycharmProjects\first\drivers\Chrome.exe")
+driver.set_page_load_timeout(5)
+driver.get("http://google.com")
+driver.find_element_by_name("q").send_keys("Automation step by step")
+driver.find_element_by_name("btnK").click()
+time.sleep(4)
+driver.quit()
+
+
